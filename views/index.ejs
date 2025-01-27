@@ -7,10 +7,15 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
+    <% if (locals.articles) {%>
+    <% articles.forEach(article => { %>
+        <div class=".news-article">
     <h1>Today's News are as follows :</h1>
-    <p>Author : <%= author %> </p>
-    <h3>Title : <%= title %></h3>
-    <p>Description : <%= description %></p>
-    <img src="<%= image %>" alt="Trending News">
+    <p>Author : <%= article.author %> </p>
+    <h3>Title : <%= article.title %></h3>
+    <p>Description : <%= article.description %></p>
+    <img src="<%= article.urlToImage %>" alt="Trending News" style="max-width: 300px;">
+</div>
+    <% })} %>
 </body>
 </html>
