@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
-import=dotenv from "dotenv"
+import=dotenv from "dotenv";
 
 const app = express();
 const port = 8000;
