@@ -18,7 +18,7 @@ app.get("/" , async (req,res)=>{
             articles : firstA
         });
     } catch (error) {
-        console.log(error.result.data);
+      
         res.status(500);
       }
 });
